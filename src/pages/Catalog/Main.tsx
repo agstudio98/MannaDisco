@@ -25,14 +25,14 @@ export function Main() {
 
   return (
     <>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8">
         {products.map((product, i) => (
-          <div key={i} className="retro-card p-6 cursor-pointer hover:vinyl-spin" onClick={() => openModal(product)}>
-            <div className="w-40 h-40 mx-auto bg-gradient-radial from-white/20 to-transparent rounded-full mb-4 shadow-xl"></div>
-            <h3 className="text-xl font-bold mb-2">{product.name}</h3>
-            <div className="text-2xl font-black text-red-400 line-through">{product.oldPrice}</div>
-            <div className="text-3xl font-lexend">{product.newPrice}</div>
-            <div className="text-lg text-yellow-400">{product.discount} OFF</div>
+          <div key={i} className="retro-card p-4 sm:p-6 cursor-pointer hover:vinyl-spin" onClick={() => openModal(product)}>
+            <div className="w-32 h-32 sm:w-40 sm:h-40 mx-auto bg-gradient-radial from-white/20 to-transparent rounded-full mb-4 shadow-xl"></div>
+            <h3 className="text-lg sm:text-xl font-bold mb-2 leading-snug">{product.name}</h3>
+            <div className="text-xl sm:text-2xl font-black text-red-400 line-through">{product.oldPrice}</div>
+            <div className="text-2xl sm:text-3xl font-lexend">{product.newPrice}</div>
+            <div className="text-base sm:text-lg text-yellow-400">{product.discount} OFF</div>
           </div>
         ))}
       </div>

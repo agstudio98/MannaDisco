@@ -10,11 +10,11 @@ export function Top() {
 
   return (
     <section>
-      <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-4">
-        <h2 className="text-6xl md:text-8xl font-lexend font-black uppercase text-left leading-none">
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-20 gap-4">
+        <h2 className="text-5xl sm:text-6xl md:text-8xl font-lexend font-black uppercase text-left leading-none">
           TOP<br /><span className="text-red-500">PROMOS</span>
         </h2>
-        <p className="text-2xl font-poiret max-w-xs text-right border-r-4 border-red-500 pr-4">
+        <p className="text-lg sm:text-2xl font-poiret max-w-xs text-left border-l-4 border-red-500 pl-4 pr-0 md:text-right md:border-r-4 md:border-l-0 md:pr-4 md:pl-0">
           Nuestra selección curada de lo mejor en audio retro.
         </p>
       </div>

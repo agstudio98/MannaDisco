@@ -10,7 +10,7 @@ export function Sucursals() {
     <section className="relative">
       <div className="absolute -left-20 top-0 w-64 h-64 bg-red-500/20 rounded-full blur-3xl -z-10"></div>
       
-      <h2 className="text-6xl md:text-8xl font-lexend font-black uppercase text-right mb-24 leading-none italic">
+      <h2 className="text-5xl sm:text-6xl md:text-8xl font-lexend font-black uppercase text-right mb-12 md:mb-24 leading-none italic">
         Nuestras<br /><span className="text-white bg-black px-4">Casas</span>
       </h2>
       
@@ -18,11 +18,11 @@ export function Sucursals() {
         {sucursals.map((suc, i) => (
           <div 
             key={i} 
-            className={`retro-card p-10 bg-zinc-900 border-4 border-white brutal-shadow-hover transition-all duration-500 ${suc.span} ${suc.mt}`}
+            className={`retro-card p-6 md:p-10 bg-zinc-900 border-4 border-white brutal-shadow-hover transition-all duration-500 ${suc.span} ${suc.mt}`}
           >
-            <h3 className="text-3xl font-black mb-4 uppercase italic text-yellow-400">{suc.name}</h3>
-            <p className="text-xl mb-8 font-bold opacity-80">{suc.address}</p>
-            <button className="brutal-btn w-full text-xl py-3 bg-white text-black hover:bg-red-500 hover:text-white transition-colors">
+            <h3 className="text-2xl sm:text-3xl font-black mb-4 uppercase italic text-yellow-400">{suc.name}</h3>
+            <p className="text-lg sm:text-xl mb-8 font-bold opacity-80">{suc.address}</p>
+            <button className="brutal-btn w-full text-lg sm:text-xl py-3 bg-white text-black hover:bg-red-500 hover:text-white transition-colors">
               VER MAPA
             </button>
           </div>

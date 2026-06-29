@@ -32,6 +32,16 @@
   .retro-card {
     @apply bg-gray-900/50 border border-white/20 backdrop-blur-sm shadow-[10px_10px_0_0_#000];
   }
+  .brutal-shadow {
+    box-shadow: 6px 6px 0px 0px #000000;
+  }
+  .brutal-shadow-hover {
+    @apply transition-all duration-300;
+  }
+  .brutal-shadow-hover:hover {
+    box-shadow: 6px 6px 0px 0px #000000;
+    @apply -translate-y-1;
+  }
   .vinyl-spin {
     animation: spin 20s linear infinite;
   }

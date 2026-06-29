@@ -11,9 +11,9 @@ export function Slogans() {
       {slogans.map((s, i) => (
         <div 
           key={i} 
-          className={`retro-card p-10 py-16 flex items-center justify-center text-center ${s.span} ${s.color} ${s.textCol} ${s.rotate} ${s.mt || ''} brutal-shadow hover:rotate-0 transition-transform`}
+          className={`retro-card p-6 py-10 md:p-10 md:py-16 flex items-center justify-center text-center ${s.span} ${s.color} ${s.textCol} ${s.rotate} ${s.mt || ''} brutal-shadow hover:rotate-0 transition-transform`}
         >
-          <p className="text-2xl md:text-3xl font-black uppercase leading-tight italic">{s.text}</p>
+          <p className="text-xl sm:text-2xl md:text-3xl font-black uppercase leading-tight italic">{s.text}</p>
         </div>
       ))}
     </section>

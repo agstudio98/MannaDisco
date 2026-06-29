@@ -8,7 +8,7 @@ export function Carrousel() {
 
   return (
     <section className="relative overflow-visible pb-40">
-      <h2 className="text-6xl md:text-9xl font-lexend font-black uppercase mb-20 leading-none">
+      <h2 className="text-5xl sm:text-6xl md:text-9xl font-lexend font-black uppercase mb-10 md:mb-20 leading-none">
         GALERÍA<br /><span className="text-white/20">ESTILO</span>
       </h2>
       
